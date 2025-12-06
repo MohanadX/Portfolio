@@ -84,6 +84,57 @@ export default function Footer() {
 						))}
 					</motion.div>
 
+					{/* CV Download Section */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6, delay: 0.2 }}
+						className="flex flex-col items-center gap-3"
+					>
+						<p className="text-sm text-gray-600 dark:text-gray-400 text-center">
+							Want to know more about my experience? Download my CV
+						</p>
+						<motion.a
+							href="/CV.pdf"
+							download="Mohanad_Ayoub_CV.pdf"
+							whileHover={{ scale: 1.05, y: -2 }}
+							whileTap={{ scale: 0.95 }}
+							className="group relative inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 overflow-hidden"
+						>
+							{/* Shimmer effect */}
+							<motion.div
+								className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
+								style={{
+									background:
+										"linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)",
+								}}
+							/>
+							
+							{/* Download Icon */}
+							<svg
+								className="w-5 h-5 relative z-10"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth={2}
+									d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+								/>
+							</svg>
+							<span className="relative z-10">Download CV</span>
+							
+							{/* Glow effect */}
+							<div className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 blur-xl bg-blue-400 transition-opacity duration-300 -z-10" />
+						</motion.a>
+						<p className="text-xs text-gray-500 dark:text-gray-500 text-center max-w-md">
+							Click the button above to download a PDF copy of my resume
+						</p>
+					</motion.div>
+
 					{/* Divider */}
 					<div className="w-24 h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent" />
 
