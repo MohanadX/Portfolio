@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+	--primary: #3b82f6;
+	--glass-bg: rgba(255, 255, 255, 0.1);
+	--glass-border: rgba(255, 255, 255, 0.2);
+}
+
+.dark {
+	--background: #0a0a0a;
+	--foreground: #ededed;
+	--primary: #60a5fa;
+	--glass-bg: rgba(0, 0, 0, 0.3);
+	--glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--primary);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #2563eb;
+}
+
+/* Text Selection - Beautiful blue-purple theme matching the portfolio */
+::selection {
+	background-color: rgba(
+		139,
+		92,
+		246,
+		0.3
+	); /* Purple-blue blend for light mode */
+	color: inherit;
+}
+
+::-moz-selection {
+	background-color: rgba(139, 92, 246, 0.3); /* Firefox support */
+	color: inherit;
+}
+
+.dark ::selection {
+	background-color: rgba(
+		167,
+		139,
+		250,
+		0.4
+	); /* Brighter purple-blue for dark mode */
+	color: #ffffff;
+}
+
+.dark ::-moz-selection {
+	background-color: rgba(167, 139, 250, 0.4); /* Firefox dark mode support */
+	color: #ffffff;
+}
+
+/* Blob animation */
+@keyframes blob {
+	0%,
+	100% {
+		transform: translate(0, 0) scale(1);
+	}
+	25% {
+		transform: translate(20px, -50px) scale(1.1);
+	}
+	50% {
+		transform: translate(-20px, 20px) scale(0.9);
+	}
+	75% {
+		transform: translate(50px, 50px) scale(1.05);
+	}
+}
+
+.animate-blob {
+	animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+	animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+	animation-delay: 4s;
+}
+
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+.rotate::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 101%;
+	height: 101%;
+	animation: rotate 5s infinite;
+	padding: 10px;
+	background-image: conic-gradient(
+		from var(--angle),
+		transparent 70%,
+		rgba(0, 200, 255, 0.6)
+	);
+	z-index: -1;
+	border-radius: 1.5rem;
+}
+@keyframes rotate {
+	from {
+		--angle: 0deg;
+	}
+	to {
+		--angle: 360deg;
+	}
+}
