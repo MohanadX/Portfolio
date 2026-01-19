@@ -16,6 +16,25 @@ interface Project {
 // Placeholder project - you can add more later
 const projects: Project[] = [
 	{
+		id: 0,
+		title: "ECourse LMS",
+		description: `ECourse is a modern, full-stack Learning Management System (LMS) built with Next.js 16 and a scalable, production-ready architecture.  
+							It provides secure authentication, course management, payments, subscriptions, coupon handling, and optimized media delivery — all designed for real-world educational platforms.`,
+		technologies: [
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Stripe",
+			"Arcjet",
+			"Clerk",
+			"Drizzle & Postgres",
+			"Shadcn",
+		],
+		image: "/ecourse.png",
+		link: "https://e-course-mo2i.vercel.app",
+		github: "https://github.com/MohanadX/ECourse",
+	},
+	{
 		id: 1,
 		title: "Lorial",
 		description:
@@ -30,8 +49,8 @@ const projects: Project[] = [
 			"mongoDb",
 		],
 		image: "/lorial.jpg",
-		link: "https://lorial.vercel.app", // Replace with your actual project URL
-		github: "https://github.com/MohanadX/Lorial", // Replace with your GitHub URL
+		link: "https://lorial.vercel.app",
+		github: "https://github.com/MohanadX/Lorial",
 	},
 	{
 		id: 2,
@@ -48,8 +67,8 @@ const projects: Project[] = [
 			"Sanity",
 		],
 		image: "/web-field.jpg",
-		link: "https://web-field.netlify.app", // Replace with your actual project URL
-		github: "https://github.com/MohanadX/Web-Field", // Replace with your GitHub URL
+		link: "https://web-field.netlify.app",
+		github: "https://github.com/MohanadX/Web-Field",
 	},
 	{
 		id: 3,
@@ -66,8 +85,8 @@ const projects: Project[] = [
 			"Axios",
 		],
 		image: "/todo.jpg",
-		link: "https://todo-list-react-appw.netlify.app", // Replace with your actual project URL
-		github: "https://github.com/MohanadX/React-Todo-list-App", // Replace with your GitHub URL
+		link: "https://todo-list-react-appw.netlify.app",
+		github: "https://github.com/MohanadX/React-Todo-list-App",
 	},
 	{
 		id: 4,
@@ -84,8 +103,8 @@ const projects: Project[] = [
 			"Axios",
 		],
 		image: "/weather.png",
-		link: "https://xweather-react-app.netlify.app", // Replace with your actual project URL
-		github: "https://github.com/MohanadX/Weather-App", // Replace with your GitHub URL
+		link: "https://xweather-react-app.netlify.app",
+		github: "https://github.com/MohanadX/Weather-App",
 	},
 	{
 		id: 5,
@@ -94,8 +113,8 @@ const projects: Project[] = [
 			"A responsive, multi‑section animations website built with semantic HTML5, modern CSS3, and vanilla JavaScript for interactivity. This project is ideal as a learning resource, a starter template.",
 		technologies: ["HTML5", "CSS3", "JS ECMA 6+", "Animations", "Responsive"],
 		image: "/Animation.jpg",
-		link: "https://mohanadx.github.io/HTML-CSS-Project-3/", // Replace with your actual project URL
-		github: "https://github.com/MohanadX/HTML-CSS-Project-3", // Replace with your GitHub URL
+		link: "https://mohanadx.github.io/HTML-CSS-Project-3/",
+		github: "https://github.com/MohanadX/HTML-CSS-Project-3",
 	},
 	{
 		id: 6,
@@ -104,8 +123,8 @@ const projects: Project[] = [
 			"This project is a 3D transformations in CSS It serves as a learning exercise in using HTML, CSS (specifically CSS 3D transforms), and how to structure a minimal 3D scene for the web, without relying on external 3D libraries or WebGL.",
 		technologies: ["HTML5", "CSS3", "JS ECMA 6+", "Animations", "3D"],
 		image: "/3D.png",
-		link: "https://mohanadx.github.io/3D/", // Replace with your actual project URL
-		github: "https://github.com/MohanadX/3D", // Replace with your GitHub URL
+		link: "https://mohanadx.github.io/3D/",
+		github: "https://github.com/MohanadX/3D",
 	},
 ];
 
