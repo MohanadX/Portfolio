@@ -1,8 +1,6 @@
-export default function PageLoader({ className }: { className?: string }) {
+export default function PageLoader() {
 	return (
-		<div
-			className={`flex min-h-screen items-center justify-center bg-background ${className ?? ""}`}
-		>
+		<div className="flex min-h-screen items-center justify-center bg-background">
 			<div
 				role="status"
 				aria-label="Loading"
