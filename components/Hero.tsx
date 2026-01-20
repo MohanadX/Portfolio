@@ -52,7 +52,7 @@ export default function Hero() {
 							transition={{ delay: 0.4, duration: 0.6 }}
 							className="text-xl md:text-2xl text-gray-600 dark:text-gray-300"
 						>
-							Next.js 16 Developer
+							Next.js, React Developer
 						</motion.p>
 
 						<motion.p
