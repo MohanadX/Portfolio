@@ -3,8 +3,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-	title: "Mohanad Ayoub - Next.js Developer Portfolio",
-	description: "Portfolio of Mohanad Ayoub, a Next.js 16 Developer",
+	title: "Mohanad Ayoub - Next.js, React Developer Portfolio",
+	description: "Portfolio of Mohanad Ayoub, a Next.js, React Developer",
 	icons: {
 		icon: "/favicon.ico",
 	},
