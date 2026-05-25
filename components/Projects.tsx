@@ -17,6 +17,25 @@ interface Project {
 const projects: Project[] = [
 	{
 		id: 0,
+		title: "Flow AI",
+		description: `Flow AI is an innovative AI-powered platform designed to streamline workflows and enhance productivity for modern teams. Built with Next.js 16 and a scalable, production-ready architecture, it offers seamless integration with popular tools and services.`,
+		technologies: [
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Shadcn UI",
+			"React Flow",
+			"LiveBlocks",
+			"Trigger.dev",
+			"Clerk",
+			"Prisma & Postgres",
+		],
+		image: "/Flow-AI.png",
+		link: "https://flow-ai-zeta-one.vercel.app/",
+		github: "https://github.com/MohanadX/Flow-AI",
+	},
+	{
+		id: 1,
 		title: "ECourse LMS",
 		description: `ECourse is a modern, full-stack Learning Management System (LMS) built with Next.js 16 and a scalable, production-ready architecture.  
 							It provides secure authentication, course management, payments, subscriptions, coupon handling, and optimized media delivery — all designed for real-world educational platforms.`,
@@ -35,7 +54,7 @@ const projects: Project[] = [
 		github: "https://github.com/MohanadX/ECourse",
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "Lorial",
 		description:
 			"The Hub For every Developer events For better Development Future. Lorial Is Next 16 project with the latest features integrated with posthog to track all kind of actions in website and handle error properly also made along side with features like sending booking emails from resend service and used mongoDB Atlas for database and imakgeKit cloud",
@@ -53,7 +72,7 @@ const projects: Project[] = [
 		github: "https://github.com/MohanadX/Lorial",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Web Field",
 		description:
 			"Web Field is a dynamic platform designed for entrepreneurs and new startups to share their innovative ideas and gain visibility within the community. It allows users to create detailed startup pitches, including a title, description, category, image URL, and the pitch content in Markdown. By connecting like-minded individuals",
@@ -71,7 +90,7 @@ const projects: Project[] = [
 		github: "https://github.com/MohanadX/Web-Field",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Todo-list React App",
 		description:
 			"A modern, accessible, and responsive Todo List application built with React and Material-UI (MUI). This project demonstrates best practices in React development, including state management with useReducer, context API for global state, localStorage caching, custom hooks, and UI accessibility (WCAG compliant).",
@@ -89,7 +108,7 @@ const projects: Project[] = [
 		github: "https://github.com/MohanadX/React-Todo-list-App",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Weather Redux App",
 		description:
 			"A responsive and multilingual weather application built with React, Redux Toolkit, Axios, and Material-UI. This app fetches real-time weather data from the OpenWeatherMap API, dynamically displays weather information, and supports language switching between Arabic and English.",
@@ -107,7 +126,7 @@ const projects: Project[] = [
 		github: "https://github.com/MohanadX/Weather-App",
 	},
 	{
-		id: 5,
+		id: 6,
 		title: "Mohanad Animations",
 		description:
 			"A responsive, multi‑section animations website built with semantic HTML5, modern CSS3, and vanilla JavaScript for interactivity. This project is ideal as a learning resource, a starter template.",
@@ -117,7 +136,7 @@ const projects: Project[] = [
 		github: "https://github.com/MohanadX/HTML-CSS-Project-3",
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "3D Scene Website",
 		description:
 			"This project is a 3D transformations in CSS It serves as a learning exercise in using HTML, CSS (specifically CSS 3D transforms), and how to structure a minimal 3D scene for the web, without relying on external 3D libraries or WebGL.",
